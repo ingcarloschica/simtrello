@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title> MAQUETACION CORTE</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" /> 
+<link rel="stylesheet" href="css/styles.css">
+ 
+</head>
+
+<body class="h-100">
+
+    <div class="bg_body">
+        <section id="main" class="">   
+            <div class="d-flex align-items-end justify-content-end mb-4">
+                <input type="hidden" id="NombreTarea" value="Nombre Tarea">
+                <input type="hidden" id="DescripcionTarea" value ="Descripción">
+                <button id="bAdd">+ Tarea</button>
+                <button id="newEst">+ Estado </button>
+            </div>
+            <div id="col-estados" class="columns">
+                <div class="column ">
+                    <h2 id="titestado-1" class="mb-3" contenteditable="true" onblur="UpdateState(this)">Primer estado</h2>
+                    <div id="estado-1" class="estado bg_secondary  px-4 py-4">
+
+                    </div>
+                </div>
+                <div class="column ">
+                    <h2 id="titestado-2" class="mb-3" contenteditable="true" onblur="UpdateState(this)">Segundo estado</h2>
+                    <div id="estado-2" class="estado bg_secondary px-4 py-4">
+
+                    </div>
+                </div>
+                <div class="column ">
+                    <h2 id="titestado-3" class="mb-3" contenteditable="true" onblur="UpdateState(this)">Tercer estado</h2>
+                    <div id="estado-3"class="estado bg_secondary px-4 py-4">
+
+                    </div>
+                </div>
+              </div>
+        </section>  
+    </div>
+
+    <script>var exports = {};</script>
+    
+    <script src="js/Controllers/StateController.js"></script>
+    <script src="js/Controllers/TaskController.js"></script>
+    <script src="js/models/StateModel.js"></script>
+    <script src="js/models/TaskModel.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
