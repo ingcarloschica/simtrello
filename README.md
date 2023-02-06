@@ -1,4 +1,4 @@
-###### PRUEBA TÉCNICA
+## PRUEBA TÉCNICA
 ***
 ### Tecnología Usada
 * TypeScript
